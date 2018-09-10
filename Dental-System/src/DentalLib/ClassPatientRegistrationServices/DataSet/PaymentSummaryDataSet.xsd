@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PaymentSummaryDataSet" targetNamespace="http://tempuri.org/PaymentSummaryDataSet.xsd" xmlns:mstns="http://tempuri.org/PaymentSummaryDataSet.xsd" xmlns="http://tempuri.org/PaymentSummaryDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+        </Connections>
+        <Tables>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PaymentSummaryDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="PaymentSummaryDataSet" msprop:Generator_DataSetName="PaymentSummaryDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="registration_table" msprop:Generator_UserTableName="registration_table" msprop:Generator_RowDeletedName="registration_tableRowDeleted" msprop:Generator_RowChangedName="registration_tableRowChanged" msprop:Generator_RowClassName="registration_tableRow" msprop:Generator_RowChangingName="registration_tableRowChanging" msprop:Generator_RowEvArgName="registration_tableRowChangeEvent" msprop:Generator_RowEvHandlerName="registration_tableRowChangeEventHandler" msprop:Generator_TableClassName="registration_tableDataTable" msprop:Generator_TableVarName="tableregistration_table" msprop:Generator_RowDeletingName="registration_tableRowDeleting" msprop:Generator_TablePropName="registration_table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid_registration" msprop:Generator_UserColumnName="sysid_registration" msprop:Generator_ColumnVarNameInTable="columnsysid_registration" msprop:Generator_ColumnPropNameInRow="sysid_registration" msprop:Generator_ColumnPropNameInTable="sysid_registrationColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="procedures_table" msprop:Generator_UserTableName="procedures_table" msprop:Generator_RowDeletedName="procedures_tableRowDeleted" msprop:Generator_RowChangedName="procedures_tableRowChanged" msprop:Generator_RowClassName="procedures_tableRow" msprop:Generator_RowChangingName="procedures_tableRowChanging" msprop:Generator_RowEvArgName="procedures_tableRowChangeEvent" msprop:Generator_RowEvHandlerName="procedures_tableRowChangeEventHandler" msprop:Generator_TableClassName="procedures_tableDataTable" msprop:Generator_TableVarName="tableprocedures_table" msprop:Generator_RowDeletingName="procedures_tableRowDeleting" msprop:Generator_TablePropName="procedures_table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid_registration" msprop:Generator_UserColumnName="sysid_registration" msprop:Generator_ColumnVarNameInTable="columnsysid_registration" msprop:Generator_ColumnPropNameInRow="sysid_registration" msprop:Generator_ColumnPropNameInTable="sysid_registrationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="date_administered" msprop:Generator_UserColumnName="date_administered" msprop:Generator_ColumnVarNameInTable="columndate_administered" msprop:Generator_ColumnPropNameInRow="date_administered" msprop:Generator_ColumnPropNameInTable="date_administeredColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="procedure_name" msprop:Generator_UserColumnName="procedure_name" msprop:Generator_ColumnVarNameInTable="columnprocedure_name" msprop:Generator_ColumnPropNameInRow="procedure_name" msprop:Generator_ColumnPropNameInTable="procedure_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="amount" msprop:Generator_UserColumnName="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="details_id" msprop:Generator_UserColumnName="details_id" msprop:Generator_ColumnVarNameInTable="columndetails_id" msprop:Generator_ColumnPropNameInRow="details_id" msprop:Generator_ColumnPropNameInTable="details_idColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="payments_table" msprop:Generator_UserTableName="payments_table" msprop:Generator_RowDeletedName="payments_tableRowDeleted" msprop:Generator_RowChangedName="payments_tableRowChanged" msprop:Generator_RowClassName="payments_tableRow" msprop:Generator_RowChangingName="payments_tableRowChanging" msprop:Generator_RowEvArgName="payments_tableRowChangeEvent" msprop:Generator_RowEvHandlerName="payments_tableRowChangeEventHandler" msprop:Generator_TableClassName="payments_tableDataTable" msprop:Generator_TableVarName="tablepayments_table" msprop:Generator_RowDeletingName="payments_tableRowDeleting" msprop:Generator_TablePropName="payments_table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid_registration" msprop:Generator_UserColumnName="sysid_registration" msprop:Generator_ColumnVarNameInTable="columnsysid_registration" msprop:Generator_ColumnPropNameInRow="sysid_registration" msprop:Generator_ColumnPropNameInTable="sysid_registrationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="receipt_details" msprop:Generator_UserColumnName="receipt_details" msprop:Generator_ColumnVarNameInTable="columnreceipt_details" msprop:Generator_ColumnPropNameInRow="receipt_details" msprop:Generator_ColumnPropNameInTable="receipt_detailsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="payment_details" msprop:Generator_UserColumnName="payment_details" msprop:Generator_ColumnVarNameInTable="columnpayment_details" msprop:Generator_ColumnPropNameInRow="payment_details" msprop:Generator_ColumnPropNameInTable="payment_detailsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="discount_details" msprop:Generator_UserColumnName="discount_details" msprop:Generator_ColumnVarNameInTable="columndiscount_details" msprop:Generator_ColumnPropNameInRow="discount_details" msprop:Generator_ColumnPropNameInTable="discount_detailsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="payment_amount" msprop:Generator_UserColumnName="payment_amount" msprop:Generator_ColumnVarNameInTable="columnpayment_amount" msprop:Generator_ColumnPropNameInRow="payment_amount" msprop:Generator_ColumnPropNameInTable="payment_amountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="discount_amount" msprop:Generator_UserColumnName="discount_amount" msprop:Generator_ColumnVarNameInTable="columndiscount_amount" msprop:Generator_ColumnPropNameInRow="discount_amount" msprop:Generator_ColumnPropNameInTable="discount_amountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="receipt_no" msprop:Generator_UserColumnName="receipt_no" msprop:Generator_ColumnVarNameInTable="columnreceipt_no" msprop:Generator_ColumnPropNameInRow="receipt_no" msprop:Generator_ColumnPropNameInTable="receipt_noColumn" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cash_report_table" msprop:Generator_UserTableName="cash_report_table" msprop:Generator_RowDeletedName="cash_report_tableRowDeleted" msprop:Generator_RowChangedName="cash_report_tableRowChanged" msprop:Generator_RowClassName="cash_report_tableRow" msprop:Generator_RowChangingName="cash_report_tableRowChanging" msprop:Generator_RowEvArgName="cash_report_tableRowChangeEvent" msprop:Generator_RowEvHandlerName="cash_report_tableRowChangeEventHandler" msprop:Generator_TableClassName="cash_report_tableDataTable" msprop:Generator_TableVarName="tablecash_report_table" msprop:Generator_RowDeletingName="cash_report_tableRowDeleting" msprop:Generator_TablePropName="cash_report_table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid_registration" msprop:Generator_UserColumnName="sysid_registration" msprop:Generator_ColumnPropNameInRow="sysid_registration" msprop:Generator_ColumnVarNameInTable="columnsysid_registration" msprop:Generator_ColumnPropNameInTable="sysid_registrationColumn" type="xs:string" />
+              <xs:element name="patient_name" msprop:Generator_UserColumnName="patient_name" msprop:Generator_ColumnPropNameInRow="patient_name" msprop:Generator_ColumnVarNameInTable="columnpatient_name" msprop:Generator_ColumnPropNameInTable="patient_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="receipt_details" msprop:Generator_UserColumnName="receipt_details" msprop:Generator_ColumnPropNameInRow="receipt_details" msprop:Generator_ColumnVarNameInTable="columnreceipt_details" msprop:Generator_ColumnPropNameInTable="receipt_detailsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="amount" msprop:Generator_UserColumnName="amount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInTable="amountColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="accounts_receivable_table" msprop:Generator_UserTableName="accounts_receivable_table" msprop:Generator_RowDeletedName="accounts_receivable_tableRowDeleted" msprop:Generator_RowChangedName="accounts_receivable_tableRowChanged" msprop:Generator_RowClassName="accounts_receivable_tableRow" msprop:Generator_RowChangingName="accounts_receivable_tableRowChanging" msprop:Generator_RowEvArgName="accounts_receivable_tableRowChangeEvent" msprop:Generator_RowEvHandlerName="accounts_receivable_tableRowChangeEventHandler" msprop:Generator_TableClassName="accounts_receivable_tableDataTable" msprop:Generator_TableVarName="tableaccounts_receivable_table" msprop:Generator_RowDeletingName="accounts_receivable_tableRowDeleting" msprop:Generator_TablePropName="accounts_receivable_table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid_registration" msprop:Generator_UserColumnName="sysid_registration" msprop:Generator_ColumnPropNameInRow="sysid_registration" msprop:Generator_ColumnVarNameInTable="columnsysid_registration" msprop:Generator_ColumnPropNameInTable="sysid_registrationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="patient_name" msprop:Generator_UserColumnName="patient_name" msprop:Generator_ColumnPropNameInRow="patient_name" msprop:Generator_ColumnVarNameInTable="columnpatient_name" msprop:Generator_ColumnPropNameInTable="patient_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="registration_date" msprop:Generator_UserColumnName="registration_date" msprop:Generator_ColumnPropNameInRow="registration_date" msprop:Generator_ColumnVarNameInTable="columnregistration_date" msprop:Generator_ColumnPropNameInTable="registration_dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="payment_details" msprop:Generator_UserColumnName="payment_details" msprop:Generator_ColumnPropNameInRow="payment_details" msprop:Generator_ColumnVarNameInTable="columnpayment_details" msprop:Generator_ColumnPropNameInTable="payment_detailsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="amount_balance" msprop:Generator_UserColumnName="amount_balance" msprop:Generator_ColumnPropNameInRow="amount_balance" msprop:Generator_ColumnVarNameInTable="columnamount_balance" msprop:Generator_ColumnPropNameInTable="amount_balanceColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="sales_table" msprop:Generator_UserTableName="sales_table" msprop:Generator_RowDeletedName="sales_tableRowDeleted" msprop:Generator_RowChangedName="sales_tableRowChanged" msprop:Generator_RowClassName="sales_tableRow" msprop:Generator_RowChangingName="sales_tableRowChanging" msprop:Generator_RowEvArgName="sales_tableRowChangeEvent" msprop:Generator_RowEvHandlerName="sales_tableRowChangeEventHandler" msprop:Generator_TableClassName="sales_tableDataTable" msprop:Generator_TableVarName="tablesales_table" msprop:Generator_RowDeletingName="sales_tableRowDeleting" msprop:Generator_TablePropName="sales_table">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid_registration" msprop:Generator_UserColumnName="sysid_registration" msprop:Generator_ColumnVarNameInTable="columnsysid_registration" msprop:Generator_ColumnPropNameInRow="sysid_registration" msprop:Generator_ColumnPropNameInTable="sysid_registrationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="patient_name" msprop:Generator_UserColumnName="patient_name" msprop:Generator_ColumnVarNameInTable="columnpatient_name" msprop:Generator_ColumnPropNameInRow="patient_name" msprop:Generator_ColumnPropNameInTable="patient_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="procedure_name" msprop:Generator_UserColumnName="procedure_name" msprop:Generator_ColumnVarNameInTable="columnprocedure_name" msprop:Generator_ColumnPropNameInRow="procedure_name" msprop:Generator_ColumnPropNameInTable="procedure_nameColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="procedure_details" msprop:Generator_UserColumnName="procedure_details" msprop:Generator_ColumnVarNameInTable="columnprocedure_details" msprop:Generator_ColumnPropNameInRow="procedure_details" msprop:Generator_ColumnPropNameInTable="procedure_detailsColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="amount" msprop:Generator_UserColumnName="amount" msprop:Generator_ColumnVarNameInTable="columnamount" msprop:Generator_ColumnPropNameInRow="amount" msprop:Generator_ColumnPropNameInTable="amountColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="registration_list" msprop:Generator_UserTableName="registration_list" msprop:Generator_RowDeletedName="registration_listRowDeleted" msprop:Generator_TableClassName="registration_listDataTable" msprop:Generator_RowChangedName="registration_listRowChanged" msprop:Generator_RowClassName="registration_listRow" msprop:Generator_RowChangingName="registration_listRowChanging" msprop:Generator_RowEvArgName="registration_listRowChangeEvent" msprop:Generator_RowEvHandlerName="registration_listRowChangeEventHandler" msprop:Generator_TablePropName="registration_list" msprop:Generator_TableVarName="tableregistration_list" msprop:Generator_RowDeletingName="registration_listRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="sysid_registration" msprop:Generator_UserColumnName="sysid_registration" msprop:Generator_ColumnPropNameInRow="sysid_registration" msprop:Generator_ColumnVarNameInTable="columnsysid_registration" msprop:Generator_ColumnPropNameInTable="sysid_registrationColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="registration_date" msprop:Generator_UserColumnName="registration_date" msprop:Generator_ColumnPropNameInRow="registration_date" msprop:Generator_ColumnVarNameInTable="columnregistration_date" msprop:Generator_ColumnPropNameInTable="registration_dateColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="amount_payable" msprop:Generator_UserColumnName="amount_payable" msprop:Generator_ColumnPropNameInRow="amount_payable" msprop:Generator_ColumnVarNameInTable="columnamount_payable" msprop:Generator_ColumnPropNameInTable="amount_payableColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="amount_paid" msprop:Generator_UserColumnName="amount_paid" msprop:Generator_ColumnPropNameInRow="amount_paid" msprop:Generator_ColumnVarNameInTable="columnamount_paid" msprop:Generator_ColumnPropNameInTable="amount_paidColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="discount" msprop:Generator_UserColumnName="discount" msprop:Generator_ColumnPropNameInRow="discount" msprop:Generator_ColumnVarNameInTable="columndiscount" msprop:Generator_ColumnPropNameInTable="discountColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="amount_balance" msprop:Generator_UserColumnName="amount_balance" msprop:Generator_ColumnPropNameInRow="amount_balance" msprop:Generator_ColumnVarNameInTable="columnamount_balance" msprop:Generator_ColumnPropNameInTable="amount_balanceColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:registration_table" />
+      <xs:field xpath="mstns:sysid_registration" />
+    </xs:unique>
+    <xs:unique name="procedures_table_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:procedures_table" />
+      <xs:field xpath="mstns:details_id" />
+    </xs:unique>
+    <xs:unique name="payments_table_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:payments_table" />
+      <xs:field xpath="mstns:receipt_no" />
+    </xs:unique>
+    <xs:keyref name="FK_registration_table_registration_list" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:registration_list" />
+      <xs:field xpath="mstns:sysid_registration" />
+    </xs:keyref>
+    <xs:keyref name="FK_registration_table_sales_table" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:sales_table" />
+      <xs:field xpath="mstns:sysid_registration" />
+    </xs:keyref>
+    <xs:keyref name="FK_registration_table_cash_report_table" refer="Constraint1" msdata:ConstraintOnly="true">
+      <xs:selector xpath=".//mstns:cash_report_table" />
+      <xs:field xpath="mstns:sysid_registration" />
+    </xs:keyref>
+    <xs:keyref name="FK_registration_table_payments_table" refer="Constraint1" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:payments_table" />
+      <xs:field xpath="mstns:sysid_registration" />
+    </xs:keyref>
+    <xs:keyref name="FK_registration_table_procedures_table" refer="Constraint1" msdata:ConstraintOnly="true" msdata:UpdateRule="None" msdata:DeleteRule="None">
+      <xs:selector xpath=".//mstns:procedures_table" />
+      <xs:field xpath="mstns:sysid_registration" />
+    </xs:keyref>
+  </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="registration_table_accounts_receivable_table" msdata:parent="registration_table" msdata:child="accounts_receivable_table" msdata:parentkey="sysid_registration" msdata:childkey="sysid_registration" msprop:Generator_UserRelationName="registration_table_accounts_receivable_table" msprop:Generator_RelationVarName="relationregistration_table_accounts_receivable_table" msprop:Generator_UserChildTable="accounts_receivable_table" msprop:Generator_UserParentTable="registration_table" msprop:Generator_ParentPropName="registration_tableRow" msprop:Generator_ChildPropName="Getaccounts_receivable_tableRows" />
+    </xs:appinfo>
+  </xs:annotation>
+</xs:schema>

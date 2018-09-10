@@ -1,0 +1,574 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5053D3A7-007C-42A3-BA45-69B45E23E601}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DentalLib</RootNamespace>
+    <AssemblyName>dntllib</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="dbselib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DatabaseLib\bin\Release\dbselib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassGeneral\ProcStatic.General.cs" />
+    <Compile Include="ClassPatientRegistrationServices\BaseClass\ChargesLogic.cs" />
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\MedicalPrescription.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\MedicalPrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\MedicalPrescription.Designer.cs">
+      <DependentUpon>MedicalPrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientCharges.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientCharges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientCharges.Designer.cs">
+      <DependentUpon>PatientCharges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientChargesSummary.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientChargesSummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientChargesSummary.Designer.cs">
+      <DependentUpon>PatientChargesSummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientRegistration.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientRegistration.Designer.cs">
+      <DependentUpon>PatientRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientRegistrationList.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientRegistrationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PatientRegistrationList.Designer.cs">
+      <DependentUpon>PatientRegistrationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PaymentDetails.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PaymentDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\PaymentDetails.Designer.cs">
+      <DependentUpon>PaymentDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\ReportOptions.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\ReportOptions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\ReportOptions.Designer.cs">
+      <DependentUpon>ReportOptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\Reports.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\Reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\BaseForm\Reports.Designer.cs">
+      <DependentUpon>Reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\CrystalReport\CrystalAccountsReceivableReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalAccountsReceivableReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\CrystalReport\CrystalCashReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalCashReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\CrystalReport\CrystalPaymentSummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalPaymentSummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\CrystalReport\CrystalRegistrationList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalRegistrationList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\CrystalReport\CrystalSalesReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalSalesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\CrystalReport\PaymentsSubReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentsSubReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\CrystalReport\ProceduresSubReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProceduresSubReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DataSet\PaymentSummaryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentSummaryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedClass\RegistrationLogic.cs" />
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientChargesUpdate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientChargesCreate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientChargesCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientChargesUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientRegistrationCreate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientRegistrationCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientRegistrationUpdate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PatientRegistrationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PaymentDetailCreate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PaymentDetailsCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PaymentDetailsUpdate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\PaymentDetailsUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportOptionsCashReport.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportOptionsCashReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportOptionsSalesReport.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportOptionsSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportsAccountsReceivable.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportsAccountsReceivable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportsCashReport.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportsCashReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportsSalesReport.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientRegistrationServices\DerivedForm\ReportsSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientServices\BaseClass\Patient.cs" />
+    <Compile Include="ClassPatientServices\BaseForm\PatientInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientServices\BaseForm\PatientInformation.Designer.cs">
+      <DependentUpon>PatientInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassPatientServices\DerivedClass\PatientLogic.cs" />
+    <Compile Include="ClassPatientServices\BaseForm\PatientInformation.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientServices\DerivedForm\PatientInformationCreate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientServices\DerivedForm\PatientInformationCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientServices\DerivedForm\PatientInformationUpdate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassPatientServices\DerivedForm\PatientInformationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\BaseClass\ProcedureLogic.cs" />
+    <Compile Include="ClassProcedureServices\BaseForm\ProcedureInformation.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\BaseForm\ProcedureInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\BaseForm\ProcedureInformation.Designer.cs">
+      <DependentUpon>ProcedureInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassProcedureServices\BaseForm\SearchOnTextboxList.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\BaseForm\SearchOnTextboxList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\BaseForm\SearchOnTextboxList.Designer.cs">
+      <DependentUpon>SearchOnTextboxList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassProcedureServices\DerivedForm\ProcedureInformationCreate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\DerivedForm\ProcedureInformationCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\DerivedForm\ProcedureInformationUpdate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\DerivedForm\ProcedureInformationUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\DerivedForm\ProcedureSearchOnTextboxList.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassProcedureServices\DerivedForm\ProcedureSearchOnTextboxList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\BaseClass\UserLogic.cs" />
+    <Compile Include="ClassUserServices\BaseForm\SystemUser.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\BaseForm\SystemUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\BaseForm\SystemUser.Designer.cs">
+      <DependentUpon>SystemUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassUserServices\DerivedForm\SystemUserCreate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\DerivedForm\SystemUserCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\DerivedForm\SystemUserUpdate.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\DerivedForm\SystemUserUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\DerivedForm\UserSearchOnTextboxList.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassUserServices\DerivedForm\UserSearchOnTextboxList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlAnimatedPanel\AnimatedPanel.Code.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlAnimatedPanel\AnimatedPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlAnimatedPanel\AnimatedPanel.designer.cs">
+      <DependentUpon>AnimatedPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlManager\ControlManager.Code.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlManager\ControlManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormDatePicker\DatePicker.Code.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatePicker\DatePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDatePicker\DatePicker.designer.cs">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportViewer\CrystalReportViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportViewer\CrystalReportViewer.designer.cs">
+      <DependentUpon>CrystalReportViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\MedicalPrescription.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MedicalPrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\PatientCharges.resx">
+      <DependentUpon>PatientCharges.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\PatientChargesSummary.resx">
+      <DependentUpon>PatientChargesSummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\PatientRegistration.resx">
+      <DependentUpon>PatientRegistration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\PatientRegistrationList.resx">
+      <DependentUpon>PatientRegistrationList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\PaymentDetails.resx">
+      <DependentUpon>PaymentDetails.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\ReportOptions.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\BaseForm\Reports.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\CrystalReport\CrystalAccountsReceivableReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalAccountsReceivableReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\CrystalReport\CrystalCashReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalCashReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\CrystalReport\CrystalPaymentSummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalPaymentSummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\CrystalReport\CrystalRegistrationList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalRegistrationList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\CrystalReport\CrystalSalesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalSalesReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\CrystalReport\PaymentsSubReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PaymentsSubReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\CrystalReport\ProceduresSubReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProceduresSubReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\PatientChargesCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientChargesCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\PatientChargesUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientChargesUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\PatientRegistrationCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientRegistrationCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\PatientRegistrationUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientRegistrationUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\PaymentDetailsCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PaymentDetailsCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\PaymentDetailsUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PaymentDetailsUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\ReportOptionsCashReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportOptionsCashReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\ReportOptionsSalesReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportOptionsSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\ReportsAccountsReceivable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportsAccountsReceivable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\ReportsCashReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportsCashReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientRegistrationServices\DerivedForm\ReportsSalesReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ReportsSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientServices\BaseForm\PatientInformation.resx">
+      <DependentUpon>PatientInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientServices\DerivedForm\PatientInformationCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientInformationCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassPatientServices\DerivedForm\PatientInformationUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PatientInformationUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassProcedureServices\BaseForm\ProcedureInformation.resx">
+      <DependentUpon>ProcedureInformation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassProcedureServices\BaseForm\SearchOnTextboxList.resx">
+      <DependentUpon>SearchOnTextboxList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassProcedureServices\DerivedForm\ProcedureInformationCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProcedureInformationCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassProcedureServices\DerivedForm\ProcedureInformationUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProcedureInformationUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassProcedureServices\DerivedForm\ProcedureSearchOnTextboxList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ProcedureSearchOnTextboxList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassUserServices\BaseForm\SystemUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassUserServices\DerivedForm\SystemUserCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemUserCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassUserServices\DerivedForm\SystemUserUpdate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SystemUserUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassUserServices\DerivedForm\UserSearchOnTextboxList.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>UserSearchOnTextboxList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlAnimatedPanel\AnimatedPanel.resx">
+      <DependentUpon>AnimatedPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlManager\ControlManager.resx">
+      <DependentUpon>ControlManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDatePicker\DatePicker.resx">
+      <DependentUpon>DatePicker.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportViewer\CrystalReportViewer.resx">
+      <DependentUpon>CrystalReportViewer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassPatientRegistrationServices\DataSet\PaymentSummaryDataSet.xsc">
+      <DependentUpon>PaymentSummaryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClassPatientRegistrationServices\DataSet\PaymentSummaryDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PaymentSummaryDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ClassPatientRegistrationServices\DataSet\PaymentSummaryDataSet.xss">
+      <DependentUpon>PaymentSummaryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\cascade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
